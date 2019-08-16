@@ -1,0 +1,31 @@
+
+:root {
+    --color-1: #ff935c;
+    --color-2: #dc5353;
+    --nav-color: #a72461;
+    --background-color: #f9e090;
+}
+
+body {
+  background-color: var(--background-color)
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+
+
+            /*
+            justify-content: center;
+            */
+
+            /*
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+            */
+}
+
+.BarChart-bar {
+  background-color: var(--color-1);
+}
