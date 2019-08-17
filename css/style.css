@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 :root {
     --color-1: #ff935c;
     --color-2: #dc5353;
@@ -11,35 +13,59 @@ body {
 }
 
 .Container {
-    display: grid;
-    grid-template-columns: 1fr 200px minmax(auto, 600px) 1fr;
-    grid-template-rows: 100px auto;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 500px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
 }
 
-.nav {
-  background-color: var(--nav-color);
+.Navigation {
+  width:100%;
+  background-color: var(--color-1);
+  position:fixed;
+  top:0px;
+  height:70px;
+  text-align:left;
+  line-height:52px;
 }
 
 .BarChart {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  grid-area: 2;
+  transform: rotate(180deg);
+  /* align-items: flex-start; */
 
-
-
-            /*
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: baseline;
-            */
 }
 
 .BarChart-bar {
-  background-color: var(--color-1);
+  background-color: var(--color-2);
   padding: 10px;
   margin: 2px;
   border-radius: 5px;
+  transform: rotate(180deg);
+  width: 75px;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 
+/* transform-origin: 0 100%; */
+
+}
+
+/* Fonts */
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5rem;
+  margin: 10px;
+  color: white;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  margin: 10px;
+  color: white;
 }
