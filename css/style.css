@@ -4,12 +4,25 @@
 :root {
     --color-1: #ff935c;
     --color-2: #dc5353;
-    --nav-color: #a72461;
+    --color-3: #a72461;
     --background-color: #f9e090;
 }
 
 body {
   background-color: var(--background-color);
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5rem;
+  margin: 10px;
+  color: white;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  margin: 10px;
+  color: var(--color-3);
 }
 
 .Container {
@@ -50,22 +63,8 @@ body {
   color: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-
-/* transform-origin: 0 100%; */
-
 }
 
-/* Fonts */
-
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 4.5rem;
-  margin: 10px;
-  color: white;
-}
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
-  margin: 10px;
-  color: white;
+.BarChart-bar:nth-child(odd) {
+  background: var(--color-1);
 }
