@@ -43,6 +43,9 @@ h2 {
   line-height:52px;
 }
 
+.Navigation-navText{
+}
+
 .BarChart {
   display: flex;
   flex-direction: row;
@@ -63,8 +66,13 @@ h2 {
   color: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  transition-property: margin;
 }
 
 .BarChart-bar:nth-child(odd) {
   background: var(--color-1);
+}
+
+.BarChart-bar:hover {
+  transform: scale(1.5);
 }
